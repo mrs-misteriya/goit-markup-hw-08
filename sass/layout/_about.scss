@@ -1,0 +1,37 @@
+.about-work{
+display: flex;
+}
+
+.title-about{
+padding-top: 0;
+}
+
+.about-list:not(:last-child){
+margin-right: 30px;
+}
+
+.about-img-block{
+position: relative;
+display: flex;
+
+.about-link:hover &{
+box-shadow: var(--transition-main-shadow);
+}
+}
+
+.about-description{
+position: absolute;
+bottom: 0;
+width: 100%;
+height: 70px;
+display: flex;
+background-color: rgba(47, 48, 58, 0.8);
+color: var(--second-text-color);
+text-transform: uppercase;
+font-size: var(--main-font-size);
+font-weight: var(--brand-weight);
+line-height: 1.14;
+align-items: center;
+justify-content: center;
+transition: box-shadow var(--transition-dur-and-func);
+}
