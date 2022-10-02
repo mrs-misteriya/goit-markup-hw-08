@@ -51,7 +51,6 @@ border-color: var(--color-button);
 }
 }
 
-
 .modal-form-input-icon{
 position:absolute;
 display: block;
@@ -66,7 +65,6 @@ transition: fill var(--transition-dur-and-func);
 fill: var(--color-button);
 }
 }
-
 
 .modal-form-message{
 display: block;
@@ -97,7 +95,6 @@ border-color: var(--color-button);
 }
 }
 
-
 .modal-form-check-field{
 display: flex;
 align-items: center;
@@ -124,7 +121,6 @@ fill: var(--second-text-color);
 border-color: var(--color-button);
 background-color: var(--color-button);
 }
-
 
 .modal-form-check:focus + &{
 box-shadow: 0 0 0 2px var(--color-button),

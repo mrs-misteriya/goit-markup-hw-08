@@ -1,0 +1,137 @@
+.mobile-menu {
+position: fixed;
+top: 0;
+left: 0;
+z-index: 100;
+width: 100%;
+height: 100%;
+background-color: var(--second-text-color);
+
+opacity: 0;
+visibility: hidden;
+pointer-events: none;
+transition: opacity var(--transition-dur-and-func), visibility var(--transition-dur-and-func);
+}
+
+.mobile-menu.is-open {
+opacity: 1;
+visibility: visible;
+pointer-events: auto;
+}
+
+.mobile-menu__container {
+position: relative;
+display: flex;
+flex-direction: column;
+height: 100%;
+padding-left: 40px;
+padding-top: 48px;
+padding-bottom: 48px;
+}
+
+.mobile-menu__close-btn {
+position: absolute;
+top: 10px;
+right: 15px;
+background-color: transparent;
+border: 0;
+padding: 0;
+line-height: 0;
+
+&:hover, 
+&:focus {
+fill: var(--color-button);
+}
+}
+
+.mobile-menu__close-icon {
+width: 40px;
+height: 40px;
+line-height: 0;
+color: var(--main-text-color);
+}
+
+.mobile-menu__link-item {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: var(--second-weigh);
+font-size: 40px;
+line-height: 1.18;
+letter-spacing: 0.02em;
+color: var(--main-text-color);
+
+&:hover, 
+&:focus {
+color: var(--color-button);
+}
+}
+
+.current {
+color: var(--color-button);
+}
+
+.mobile-menu__item-list:not(:last-child) {
+margin-bottom: 32px;
+}
+
+.mobile-menu__list {
+margin-bottom: auto;
+}
+
+.mobile-menu__contacts{
+margin-top: 302px;
+}
+
+.mobile-menu__link-phone {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: var(--second-weigh);
+font-size: 34px;
+line-height: 1.18;
+letter-spacing: 0.02em;
+color: var(--color-button);
+}
+
+.mobile-menu__phone {
+margin-bottom: 32px;
+}
+
+.mobile-menu__link-mail {
+font-family: 'Roboto';
+font-style: var(--second-weigh);
+font-weight: 500;
+font-size: 24px;
+line-height: 1.17;
+letter-spacing: 0.02em;
+color: var(--main-color-link);  
+}
+
+.mobile-menu__mail {
+margin-bottom: 64px;
+}
+
+.mobile-menu__social {
+display: flex;
+flex-wrap: wrap;
+}
+
+.mobile-menu__list:not(:last-child) {
+padding-right: 10px;
+border-right:  1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-menu__list:not(:first-child) {
+padding-left: 10px;
+padding-bottom: 10px;
+}
+
+.mobile-menu__link {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: var(--second-weigh);
+font-size: 18px;
+line-height: 1.22;
+letter-spacing: 0.02em;
+color: var(--color-button);
+}
+
