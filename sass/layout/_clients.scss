@@ -1,41 +1,72 @@
-.clients-block{
-width: 1170;
+
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
 }
 
-.clients{
-display: flex;
-column-gap: 30px;
+.clients__title {
+      margin-bottom: 30px;
+      font-weight: 700;
+      font-size: 28px;
+      line-height: 1.18;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+    
+    @media screen and (min-width: 1200px) {
+      .clients__title {
+        margin-bottom: 50px;
+        // font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        // text-align: center;
+        // letter-spacing: 0.03em;
+      }
+    }
+    
+    .clients__link {
+    display: flex;
+    width: 100%;
+    height: 92px;
+    color: #afb1b8;
+    border: 1px solid rgba(175, 177, 184, 1);
+    border-radius: 4px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+  
+    transition: border-color var(--transition-cubic),
+      color var(--transition-cubic);
+  }
+  
+  .clients__item {
+    // margin-right: 30px;
+    width: calc((100% - 30px) / 2);
 }
 
-.list-clients{
-width: 170px;
-height: 92px;
+@media screen and (min-width: 768px) {
+  .clients__item {
+    width: calc((100% - 60px) / 3);
+  }
 }
 
-.list-client-link{
-display: flex;
-justify-content: center;
-align-items: center;
-width: 100%;
-height: 100%;
-color: #AFB1B8;
-border: 1px solid #AFB1B8;
-border-radius: 4px;
-transition: color var(--transition-dur-and-func),
-border-color var(--transition-dur-and-func),
-box-shadow var(--transition-dur-and-func);
-
-&:hover,
-&:focus{
-color: var(--color-button);
-border-color: var(--color-button);
-box-shadow: var(--transition-main-shadow);
-}
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    width: calc((100% - 150px) / 6);
+  }
 }
 
-.client-icon{
-width: 106px;
-height: 60px;
-fill: currentColor;
-}
-
+  .clients__item:nth-child(6n) {
+    margin-right: 0;
+  }
+  
+  .clients__icon {
+    fill: currentColor;
+  }
+  
+  .clients__link:hover,
+  .clients__link:focus {
+    color: var(--accent-color);
+    border-color: var(--accent-color);
+  }

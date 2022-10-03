@@ -1,0 +1,41 @@
+.logo {
+    color: var(--main-color);
+  
+    font-family: Raleway, sans-serif;
+    @include font(700, 26px, 1.19);
+    text-decoration: none;
+  
+    &:hover,
+    &:focus {
+      color: var(--main-color);
+    }
+  }
+  
+  .main-logo {
+    color: var(--accent-color);
+  
+    font-family: Raleway, sans-serif;
+    text-decoration: none;
+    @include font(700, 26px, 1.19);
+  
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  
+  .footer-logo {
+    color: var(--brand-background);
+    display: inline-block;
+  
+    font-family: Raleway, sans-serif;
+    text-decoration: none;
+    @include font(700, 26px, 1.19);
+  
+    margin-bottom: 20px;
+  
+    &:hover,
+    &:focus {
+      color: var(--brand-background);
+    }
+  }
